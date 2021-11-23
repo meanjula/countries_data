@@ -6,7 +6,7 @@ This is the react app where axios is used to do http request for getting data fr
 
 ## Screenshot
 
-![screenshot of Countries](./screenshot.png)
+![screenshot of Countries](./screenshot1.png)
 
 ## Sources
 
