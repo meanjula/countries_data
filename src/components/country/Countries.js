@@ -2,7 +2,7 @@ import React from "react";
 
 const Countries = () => {
   return (
-    <div className="countries">
+    <div className="country">
       {this.state.data.map((country) => (
         <div key={country.name.common} className="country">
           <h1>{country.name.common}</h1>
