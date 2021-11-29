@@ -6,8 +6,9 @@ This is the react app where axios is used to do http request for getting data fr
 
 ## Screenshot
 
-![screenshot of Countries](./screenshot1.png)
+![screenshot of Countries](./src/images/screnshot.png)
 
 ## Sources
 
 - [axios documentation](https://axios-http.com/docs/intro)
+  src/images/screnshot.png

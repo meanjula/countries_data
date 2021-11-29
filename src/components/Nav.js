@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { ReactComponent as Logo } from "../images/logo.svg";
 const Nav = () => {
   return (
     <div className="nav">
-      <h2>logo</h2>
+      <Logo className="logo" />
       <ul>
         <li>
           <Link to="/">Home</Link>

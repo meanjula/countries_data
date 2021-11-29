@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "./Home";
-
 import { Routes, Route, useParams } from "react-router-dom";
 import CountriesList from "./country/CountriesList";
 import CountrySingle from "./country/CountrySingle";
