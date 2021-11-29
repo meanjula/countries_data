@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import CountryCard from "./CountryCard";
-
+// import { Routes, Route } from "react-router-dom";
+// import CountrySingle from "./CountrySingle";
 class CountriesList extends Component {
   state = {
     data: [],
@@ -49,7 +50,7 @@ class CountriesList extends Component {
           />
           <div className="countries">
             {countryFilter.map((country) => (
-              <CountryCard key={country.name.toUpperCase()} country={country} />
+              <CountryCard key={country.name.toUpperCase()} {...country} />
             ))}
           </div>
         </div>
