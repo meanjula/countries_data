@@ -2,10 +2,11 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
+      <h1> Welcome to the home page </h1>
       <p>
-        Welcome to the home page this is all about World countries and their
-        information.
+        This is all about World countries and their general statistic which are
+        fetched using restcountrise api.
       </p>
     </div>
   );
