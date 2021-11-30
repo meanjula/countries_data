@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
-
+import number from "easy-number-formatter";
 function getCountry(capital) {
   return axios.get(`https://restcountries.com/v2/capital/${capital}`);
 }
@@ -47,12 +47,15 @@ class CountrySingle extends Component {
       return (
         <div className="country-single">
           <div className="weather-descrptn">
-            <h1>Weather: {this.state.country.capital}</h1>
+            <h1>Weather@ {this.state.country.capital}</h1>
             <p>
-              Right now it is {this.state.weather.main.temp}degree in{" "}
-              {this.state.country.capital}
+              Right now it is <span>{this.state.weather.main.temp}</span>degree
+              in <span>{this.state.country.capital}</span>
             </p>
-            <p>Population:{this.state.country.population}</p>
+            <p>
+              Population:
+              <span>{number.formatNumber(this.state.country.population)}</span>
+            </p>
             <p>
               Languages:
               {this.state.country.languages.map((lang, i) => (

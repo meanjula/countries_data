@@ -5,8 +5,8 @@ const Home = () => {
     <div className="home">
       <h1> Welcome to the home page </h1>
       <p>
-        This is all about World countries and their general statistic which are
-        fetched using restcountrise api.
+        This is all about world's countries and their general information such
+        as languages, currencies, population and so on....
       </p>
     </div>
   );
