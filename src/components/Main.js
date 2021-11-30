@@ -3,7 +3,7 @@ import Home from "./Home";
 import { Routes, Route, useParams } from "react-router-dom";
 import CountriesList from "./country/CountriesList";
 import CountrySingle from "./country/CountrySingle";
-
+//routewrapper for using useparam hook in class component(countrysingle)
 const RouteWrapper = (props) => {
   const params = useParams();
   return <CountrySingle params={params} {...props} />;

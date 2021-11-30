@@ -3,6 +3,7 @@
 ## Introduction
 
 This is the react app where axios is used to do http request for getting data from countries api.
+For weather data store authentication code in env file.
 
 ## Screenshot
 
@@ -11,4 +12,7 @@ This is the react app where axios is used to do http request for getting data fr
 ## Sources
 
 - [axios documentation](https://axios-http.com/docs/intro)
-  src/images/screnshot.png
+
+- [weatherstack](https://weatherstack.com/documentation)
+
+-[rest countries](https://restcountries.com/v2/all)
