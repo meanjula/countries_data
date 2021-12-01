@@ -91,8 +91,8 @@ p {
   color: #ffffff;
   background: linear-gradient(
       90deg,
-      rgba(39, 48, 48, 0.8),
-      rgba(25, 68, 82, 0.7)
+      rgba(39, 48, 48, 0.7),
+      rgba(25, 68, 82, 0.5)
     ),
     url("./images/map.jpg") no-repeat fixed center center/cover;
 }
@@ -177,13 +177,14 @@ footer {
   }
 }
 @media (max-width: 550px) {
+  .App {
+    width: 100vw;
+  }
   .logo {
     height: 200px;
     width: 200px;
   }
-  .nav {
-    margin-left: 3rem;
-  }
+
   .nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -194,6 +195,15 @@ footer {
   input[type="text"] {
     margin-left: 5rem;
   }
+
+  .weather-img {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
 }
 @media (max-width: 350px) {
   h1 {
@@ -202,9 +212,10 @@ footer {
   h2 {
     font-size: 1rem;
   }
-  .nav {
-    margin-left: 1rem;
+  p {
+    font-size: 1rem;
   }
+
   .country {
     height: 250px;
     width: 250px;
