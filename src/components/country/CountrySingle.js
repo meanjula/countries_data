@@ -34,14 +34,12 @@ class CountrySingle extends Component {
   }
   render() {
     if (this.state.isLoading) {
-      if (this.state.isLoading) {
-        return (
-          <div className="loader">
-            <div></div>
-            <div></div>
-          </div>
-        );
-      }
+      return (
+        <div className="loader">
+          <div></div>
+          <div></div>
+        </div>
+      );
     }
     if (!this.state.isLoading) {
       return (

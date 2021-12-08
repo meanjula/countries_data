@@ -140,11 +140,25 @@ img {
   justify-content: center;
   width: 100vw;
   height: 78vh;
+  position: relative;
 }
 .home p {
   font-family: "Roboto Slab", serif;
 }
 
+.home .text,
+.weather-descrptn {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  display: block;
+  width: 400px;
+  height: 400px;
+  text-align: left;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
 * /******************* country-single ********************* */
 .country-single {
   width: 100vw;
@@ -152,14 +166,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.weather-descrptn {
   position: relative;
 }
+
 .weather-img {
   position: absolute;
   left: 60%;
-  top: 20%;
+  top: 0;
   display: block;
   width: 250px;
   height: 250px;
@@ -171,20 +184,34 @@ img {
 footer {
   height: 5rem;
 }
+@media only screen and (max-width: 1030px) {
+  .weather-img {
+    left: 10%;
+  }
+  .home .text,
+  .weather-descrptn {
+    width: 500px;
+    height: 500px;
+  }
+  p {
+    font-weight: 600;
+  }
+}
 @media only screen and (max-width: 800px) {
   input[type="text"] {
     margin-left: 10rem;
   }
 }
 @media (max-width: 550px) {
-  .App {
-    width: 100vw;
-  }
   .logo {
     height: 200px;
     width: 200px;
   }
-
+  .home .text,
+  .weather-descrptn {
+    width: 300px;
+    height: 300px;
+  }
   .nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -197,12 +224,21 @@ footer {
   }
 
   .weather-img {
-    position: absolute;
-    left: 45%;
-    top: 20%;
-    display: block;
-    width: 200px;
-    height: 200px;
+    left: 0;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .home h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 10px;
+    text-align: right;
   }
 }
 @media (max-width: 350px) {
@@ -215,7 +251,6 @@ footer {
   p {
     font-size: 1rem;
   }
-
   .country {
     height: 250px;
     width: 250px;
