@@ -10,7 +10,7 @@ const CountryCard = ({
   population,
 }) => {
   return (
-    <Link to={capital}>
+    <Link to={{ pathname: `${capital}` }}>
       <div className="country">
         <div className="country-header">
           <h1>{name}</h1>
@@ -21,12 +21,12 @@ const CountryCard = ({
         <p>
           {languages.length > 1 ? `Languages` : `Language`}:{" "}
           <span>
-            {languages.map((language, i) => language.name).join(", ")}
+            {languages?.map((language, i) => language.name).join(", ")}
           </span>
         </p>
         <p>
           currencies:{" "}
-          {currencies.map((cur, i) => (
+          {currencies?.map((cur, i) => (
             <span key={i}>{cur.name}</span>
           ))}
         </p>

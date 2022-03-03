@@ -56,9 +56,7 @@ class CountrySingle extends Component {
             </p>
             <p>
               Languages:
-              {this.state.country.languages.map((lang, i) => (
-                <span key={i}>{lang.name}</span>
-              ))}
+              {this.state.country.languages[0].name}
             </p>
           </div>
 

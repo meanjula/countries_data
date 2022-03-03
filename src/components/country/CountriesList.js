@@ -16,7 +16,7 @@ class CountriesList extends Component {
       )
       .then((res) => {
         this.setState({ data: res.data, isLoading: false });
-        this.state.data.map((country) => console.log(this.state.data));
+        this.state.data.map((country) => country);
       });
   }
   searchHandler = (e) => {
@@ -25,6 +25,7 @@ class CountriesList extends Component {
     });
     console.log(this.state.searchInput);
   };
+
   render() {
     if (this.state.isLoading) {
       return (
@@ -34,6 +35,7 @@ class CountriesList extends Component {
         </div>
       );
     }
+
     const countryFilter = this.state.data.filter((country) => {
       return country.name
         .toLowerCase()
@@ -43,11 +45,7 @@ class CountriesList extends Component {
     if (!this.state.isLoading) {
       return (
         <div className="countries-container">
-          <input
-            type="text"
-            name="search"
-            onChange={this.searchHandler.bind(this)}
-          />
+          <input type="text" name="search" onChange={this.searchHandler} />
           <div className="countries">
             {countryFilter.map((country) => (
               <CountryCard key={country.name.toUpperCase()} {...country} />

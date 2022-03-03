@@ -8,7 +8,8 @@ const RouteWrapper = (props) => {
   const params = useParams();
   return <CountrySingle params={params} {...props} />;
 };
-const Main = () => {
+const Main = (props) => {
+  console.log(props);
   return (
     <main>
       <Routes>
