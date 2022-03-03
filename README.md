@@ -5,6 +5,8 @@
 This is the react app where axios is used to do http request for getting data from countries api.
 For weather data store authentication code in env file.
 
+- [Deployed app in netlify](https://countries-weather-data.netlify.app)
+
 ## Screenshot
 
 ![screenshot of Countries](./src/images/screnshot.png)
